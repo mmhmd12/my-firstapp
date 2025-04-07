@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Cheat Codes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 5px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        .content {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+        .search-bar {
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        .cheat-codes {
+            width: 90%;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .cheat-category {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .cheat-code {
+            background-color: #333;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #555;
+            color: #fff;
+        }
+        .cheat-code:hover {
+            background-color: #555;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            input[type="text"] {
+                width: 80%;
+            }
+            .cheat-codes {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Game Cheat Codes</h1>
+    </header>
+    <nav>
+        <a href="#ps-cheats">PS Cheats</a>
+        <a href="#xbox-cheats">Xbox Cheats</a>
+        <a href="#pc-cheats">PC Cheats</a>
+        <a href="#search">Search</a>
+    </nav>
+    <div class="content">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a cheat..." id="search">
+            <button onclick="searchCheats()">Search</button>
+        </div>
+        <div class="cheat-codes" id="cheat-list">
+            <div class="cheat-category" id="ps-cheats">PlayStation Cheats</div>
+            <!-- PlayStation codes -->
+            <div class="cheat-code">Full Health: L1, L2, R1, R2, Left, Down, Right, Up</div>
+            <div class="cheat-code">Spawn Tank: R1, R2, L1, R1, Left, Down, Right, Up</div>
+            <div class="cheat-code">Infinite Ammo: R1, R2, L1, L1, Left, Right, Left, Right</div>
+            <div class="cheat-code">Lower Wanted Level: R1, R2, L1, R1, Left, Down, Right, Up</div>
+            <div class="cheat-code">Raise Wanted Level: R1, R2, L1, R1, Up, Down, Left, Right</div>
+            <div class="cheat-code">Spawn Motorcycle: R1, R2, L1, L1, Left, Left, Down, Up</div>
+            <div class="cheat-code">Spawn Car: R1, R2, L1, R1, Left, Down, Right, Up</div>
+            <div class="cheat-code">Super Jump: L1, L2, R1, R2, Left, Up, Right, Down</div>
+            <div class="cheat-code">Slow Motion Aim: L1, R1, R2, R2, Left, Right, Left, Right</div>
+            <div class="cheat-code">Fast Running: R1, R2, L1, L1, Left, Left, Right, Right</div>
+            <div class="cheat-code">Explosive Bullets: R1, R2, L1, L1, Down, Up, Left, Right</div>
+            <div class="cheat-code">All Weapons: R1, R2, L1, L1, Left, Down, Right, Up</div>
+            <div class="cheat-code">Change Weather: R1, R2, L1, L1, Left, Right, Left, Right</div>
+            <div class="cheat-code">Spawn Helicopter: R1, R2, L1, L1, Down, Left, Right, Up</div>
+            <div class="cheat-code">God Mode: R1, R2, L1, L1, Up, Down, Left, Right</div>
+            <div class="cheat-code">Change Time: R1, R2, L1, L1, Left, Down, Right, Up</div>
+            <div class="cheat-code">Spawn Tanker: R1, R2, L1, R1, Left, Down, Up, Right</div>
+            <div class="cheat-code">All Cars: R1, R2, L1, L1, Left, Right, Left, Right</div>
+            <div class="cheat-code">Spawn Plane: R1, R2, L1, L1, Down, Left, Right, Up</div>
+            <div class="cheat-code">Full Body Armor: L1, L2, R1, R2, Left, Down, Right, Up</div>
+
+            <div class="cheat-category" id="xbox-cheats">Xbox Cheats</div>
+            <!-- Xbox codes -->
+            <div class="cheat-code">Full Health: LB, LT, RB, RT, Left, Down, Right, Up</div>
+            <div class="cheat-code">Spawn Tank: RB, RT, LB, RB, Left, Down, Right, Up</div>
+            <div class="cheat-code">Infinite Ammo: RB, RT, LB, LB, Left, Right, Left, Right</div>
+            <div class="cheat-code">Lower Wanted Level: RB, RT, LB, RB, Left, Down, Right, Up</div>
+            <div class="cheat-code">Raise Wanted Level: RB, RT, LB, RB, Up, Down, Left, Right</div>
+            <div class="cheat-code">Spawn Motorcycle: RB, RT, LB, LB, Left, Left, Down, Up</div>
+            <div class="cheat-code">Spawn Car: RB, RT, LB, RB, Left, Down, Right, Up</div>
+            <div class="cheat-code">Super Jump: LB, LT, RB, RT, Left, Up, Right, Down</div>
+            <div class="cheat-code">Slow Motion Aim: LB, RB, RT, RT, Left, Right, Left, Right</div>
+            <div class="cheat-code">Fast Running: RB, RT, LB, LB, Left, Left, Right, Right</div>
+            <div class="cheat-code">Explosive Bullets: RB, RT, LB, LB, Down, Up, Left, Right</div>
+            <div class="cheat-code">All Weapons: RB, RT, LB, LB, Left, Down, Right, Up</div>
+            <div class="cheat-code">Change Weather: RB, RT, LB, LB, Left, Right, Left, Right</div>
+            <div class="cheat-code">Spawn Helicopter: RB, RT, LB, LB, Down, Left, Right, Up</div>
+            <div class="cheat-code">God Mode: RB, RT, LB, LB, Up, Down, Left, Right</div>
+            <div class="cheat-code">Change Time: RB, RT, LB, LB, Left, Down, Right, Up</div>
+            <div class="cheat-code">Spawn Tanker: RB, RT, LB, RB, Left, Down, Up, Right</div>
+            <div class="cheat-code">All Cars: RB, RT, LB, LB, Left, Right, Left, Right</div>
+            <div class="cheat-code">Spawn Plane: RB, RT, LB, LB, Down, Left, Right, Up</div>
+            <div class="cheat-code">Full Body Armor: LB, LT, RB, RT, Left, Down, Right, Up</div>
+
+            <div class="cheat-category" id="pc-cheats">PC Cheats</div>
+            <!-- PC codes -->
+            <div class="cheat-code">God Mode: IHEARTME</div>
+            <div class="cheat-code">Spawn Car: GIVECAR</div>
+            <div class="cheat-code">Infinite Ammo: AMMOFORALL</div>
+            <div class="cheat-code">Full Health: HEALTHY</div>
+            <div class="cheat-code">Lower Wanted Level: WANTEDLOW</div>
+            <div class="cheat-code">Raise Wanted Level: WANTEDHIGH</div>
+            <div class="cheat-code">Unlock All Levels: ALLLEVELS</div>
+            <div class="cheat-code">Change Weather: WEATHERCHANGE</div>
+            <div class="cheat-code">Super Speed: FASTFORWARD</div>
+            <div class="cheat-code">Slow Motion: SLOWTIME</div>
+            <div class="cheat-code">Unlock All Cars: ALLCARS</div>
+            <div class="cheat-code">All Weapons: ALLWEAPONS</div>
+            <div class="cheat-code">Spawn Helicopter: HELICOPTER</div>
+            <div class="cheat-code">Spawn Tank: TANKTIME</div>
+            <div class="cheat-code">Max Resources: MAXRESOURCES</div>
+            <div class="cheat-code">Disable AI: NOAI</div>
+            <div class="cheat-code">Full Armor: FULLARMOR</div>
+            <div class="cheat-code">Unlock Everything: UNLOCKALL</div>
+            <div class="cheat-code">Increase Experience: EXPRATE</div>
+            <div class="cheat-code">Instant Kill: INSTANTDEATH</div>
+            <div class="cheat-code">Toggle Night Vision: NIGHTVISION</div>
+            <div class="cheat-code">Disable Gravity: NOGRAVITY</div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Game Cheat Codes</p>
+    </div>
+
+    <script>
+        function searchCheats() {
+            const searchValue = document.getElementById("search").value.toLowerCase();
+            const cheatCodes = document.querySelectorAll(".cheat-code");
+            cheatCodes.forEach(code => {
+                if (code.textContent.toLowerCase().includes(searchValue)) {
+                    code.style.display = "block";
+                } else {
+                    code.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
